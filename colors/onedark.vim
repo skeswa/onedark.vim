@@ -81,6 +81,7 @@ let s:cyan = { "gui": "#56B6C2", "cterm": "38", "cterm16": "6" } " Alternate cte
 let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
 
 let s:black = { "gui": "#282C34", "cterm": "0", "cterm16": "0" }
+let s:bright_black = { "gui": "#444f5d", "cterm": "8", "cterm16": "8" }
 let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": s:black.cterm16 } " Black out selected text in 16-color visual mode
 
 let s:comment_grey = { "gui": "#5C6670", "cterm": "59", "cterm16": "15" }
@@ -141,6 +142,7 @@ call s:h("Cursor", { "fg": s:black, "bg": s:blue }) " the character under the cu
 call s:h("CursorIM", {}) " like Cursor, but used when in IME mode
 call s:h("CursorColumn", { "bg": s:cursor_grey }) " the screen column that the cursor is in when 'cursorcolumn' is set
 call s:h("CursorLine", { "bg": s:cursor_grey }) " the screen line that the cursor is in when 'cursorline' is set
+call s:h("DarkSpike", { "bg": s:bright_black }) " the screen line that the cursor is in when 'cursorline' is set
 call s:h("Directory", {}) " directory names (and other special names in listings)
 call s:h("DiffAdd", { "fg": s:green }) " diff mode: Added line
 call s:h("DiffChange", { "fg": s:dark_yellow }) " diff mode: Changed line
